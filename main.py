@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse
 from model import calculate_meals_nutrients, calculate_nutrition, recommend,output_recommended_recipes
 
 
-dataset = pd.read_csv('https://raw.githubusercontent.com/zakaria-narjis/Diet-Recommendation-System/main/Data/dataset.csv',compression='gzip')
+dataset = pd.read_csv('dataset.csv',compression='gzip')
 
 app = FastAPI()
 
